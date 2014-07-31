@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {
+  font-family: arial, sans-serif;
+  margin: auto;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="newQuestion()">
+<h1 id="question"></h1>
+<video id="selfVideo" autoplay></video>
+<audio id="selfAudio" autoplay></audio>
+
+<br />
+<button type="button" onclick="togRecord()" id="recordButton">Record</button>
+<button type="button" onclick="play()">Play</button>
+<button type="button" onclick="newQuestion()">New Question</button>
+
+<br /><br />
+Directions: Record yourself answering a question. To record, press record. 
+To listen to yourself, press play.
+
+<script type="text/javascript" src="RecordRTC.js"></script>
+<script type="text/javascript" src="questions.js"></script>
+<script type="text/javascript" src="interview.js"></script>
+</body>
+</html>
